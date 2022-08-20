@@ -8,7 +8,7 @@ export class TodoResolver {
   constructor(@Inject(PrismaService) private prismaService: PrismaService) {}
 
   @Query(returns => [Todo])
-  getTodos() {
+  todos() {
     return this.prismaService.todo.findMany();
   }
 }

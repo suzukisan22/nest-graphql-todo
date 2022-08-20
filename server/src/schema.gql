@@ -9,5 +9,5 @@ type Todo {
 }
 
 type Query {
-  getTodos: [Todo!]!
+  todos: [Todo!]!
 }
