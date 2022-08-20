@@ -13,9 +13,23 @@ const Home: NextPage = () => {
   if (!todos) return null;
 
   return (
-    <div className={styles.container}>
-      {todos[0]?.id}
-      {todos[0]?.name}
+    <div>
+      <table>
+        <thead>
+          <td>ID</td>
+          <td>名前</td>
+        </thead>
+        <tbody>
+          {todos.map((todo) => {
+            return (
+              <tr>
+                <td>{todo.id}</td>
+                <td>{todo.name}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
     </div>
   )
 }
