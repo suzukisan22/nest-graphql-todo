@@ -1,7 +1,7 @@
 import { Inject } from "@nestjs/common";
 import { Resolver, Query } from "@nestjs/graphql";
 import { PrismaService } from "./prisma.service"
-import { Todo } from "./todo"
+import { Todo } from "./@generated/prisma-nestjs-graphql/todo/todo.model"
 
 @Resolver(of => Todo)
 export class TodoResolver {

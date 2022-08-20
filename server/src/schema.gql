@@ -3,9 +3,9 @@
 # ------------------------------------------------------
 
 type Todo {
-  id: Int!
+  id: ID!
   name: String!
-  description: [String!]
+  description: String
 }
 
 type Query {
